@@ -2,6 +2,8 @@
 
 A small ColdFusion site that lets you draw a handwritten signature in the browser with a mouse, stylus or finger, then sends it to the server and shows it back as an image.
 
+Live demo: https://www.trinthlo.com/sites/jsignature
+
 ## What it does
 
 - Shows a signing area using the [jSignature](https://github.com/brinley/jSignature) jQuery plugin. It works with a mouse, a stylus or a touchscreen.
@@ -29,7 +31,7 @@ The size check runs before the full image is decoded. That stops a small file th
 ## Setup
 
 1. Put the folder in your web root, for example `https://localhost/jsignature`.
-2. In `Application.cfc`, inside `onApplicationStart`, change `application.urls.normal` and `application.urls.secure` to the address where the site will run (for example `https://localhost/jsignature`). If you skip this step, the https redirect and the page's CSS, JavaScript and images still point to the Trinthlo site.
+2. In `Application.cfc`, inside `onApplicationStart`, change `application.urls.normal` and `application.urls.secure` to the address where the site will run (for example `https://localhost/jsignature`). If you skip this step, the https redirect and the page's CSS, JavaScript and images still point to the Trinthlo demo site.
 3. Open `index.cfm` in a browser. If you opened the site before changing the URLs, restart ColdFusion first so the new values are loaded.
 
 ## Project structure
